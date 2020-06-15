@@ -14,7 +14,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                echo 'building and deploying artifact3'
+                echo 'building and deploying artifact4'
             }
         }
     }
