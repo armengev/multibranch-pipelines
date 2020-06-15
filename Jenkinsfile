@@ -3,7 +3,7 @@ pipeline {
     stages {
    stage('build a source code') {
             when {
-                not { branch 'origin/master' }
+                not { branch 'master' }
             }
             steps {
                 echo 'building a source code'
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build and deploy artifact') {
             when {
-                branch 'origin/master'
+                branch 'master'
             }
             steps {
                 echo 'building and deploying artifact'
